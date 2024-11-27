@@ -46,6 +46,8 @@ var (
 	ErrHttpCreateRequest = NewErr(40100, "创建Http请求错误")
 	ErrHttpRequest       = NewErr(40101, "Http请求错误")
 	ErrReadHttpResponse  = NewErr(40102, "读取Http请求错误")
+
+	ErrTooManyRequest = NewErr(40429, "请求限流")
 )
 
 func (e *ErrCode) ToJson() map[string]any {
