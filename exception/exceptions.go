@@ -48,6 +48,8 @@ var (
 	ErrReadHttpResponse  = NewErr(40102, "读取Http请求错误")
 
 	ErrTooManyRequest = NewErr(40429, "请求限流")
+
+	ErrForbitIp = NewErr(40430, "该IP被禁用")
 )
 
 func (e *ErrCode) ToJson() map[string]any {
