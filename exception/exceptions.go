@@ -43,6 +43,8 @@ var (
 	ErrRouteConfig     = NewErr(40012, "路由内部配置错误")
 	ErrNoHealthService = NewErr(40013, "没有健康实例")
 
+	ErrTokenInvalid = NewErr(40015, "Token无效")
+
 	ErrHttpCreateRequest = NewErr(40100, "创建Http请求错误")
 	ErrHttpRequest       = NewErr(40101, "Http请求错误")
 	ErrReadHttpResponse  = NewErr(40102, "读取Http请求错误")
