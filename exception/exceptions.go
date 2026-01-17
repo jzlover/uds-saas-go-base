@@ -25,6 +25,9 @@ var (
 	ErrFindUserAccount = NewErr(21001, "查询用户账号错误")
 	ErrFindUserCompany = NewErr(21002, "查询用户公司信息错误")
 
+	ErrUserPermission = NewErr(21003, "查询用户权限错误")
+	ErrSetPermission  = NewErr(20014, "设置用户权限错误")
+
 	ErrTelValid   = NewErr(30003, "手机号验证错误")
 	ErrEmailValid = NewErr(30007, "邮箱验证错误")
 
